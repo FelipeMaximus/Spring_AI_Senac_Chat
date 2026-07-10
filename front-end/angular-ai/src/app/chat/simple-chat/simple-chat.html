@@ -1,0 +1,50 @@
+<!--HTML DO CHAT SIMPLES-->
+
+<mat-card class="chat-container">
+  <div>
+    <mat-toolbar color="primary">
+          <span class="titulo-chat">Senac Chat</span>
+    </mat-toolbar>
+  </div>
+
+  <div class="chat-history" #chatHistory>
+    <div class="messages">
+      <!--usando for para receber os dados-->
+      @for (message of messages(); track message) {
+        <div class="message">
+          <!--ngClass serve para adicionar uma classe nova e se aplica se a msg nao for de BOT-->
+          <div class="message-buble" [ngClass]="{'user': !message.isBot}">
+            {{ message.text }}
+          </div>
+        </div>
+      }
+
+      <!--AQUI É COMO SE O CHAT ESTIVESSSE PENSANDO-->
+      @if (isLoading) {
+        <div class="message">
+          <div class="message-buble">
+            <span class="typing">...</span> <!-- ANIMAÇÃO TIPO DIGITANDO-->
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+
+  <!--FORMULARIO-->
+  <div class="chat-input">
+    <mat-form-field class="full-width">
+      <mat-label>Pergunte algo</mat-label>
+      <!--matInput serve para pegar o formulario-->
+      <!--KEYUP serve para capturar o enter, vc aperta ele para mandar a msg-->
+      <input matInput [(ngModel)]="userInput" (keyup.enter)="sendMessage()">
+      <!--matSuffix serve para colocar o botão no final-->
+      <!--(click) serve para chamar a função-->
+      <button matSuffix matIconButton aria-label="Send" (click)="sendMessage()" [disabled]="isLoading"><!--caso esteja carregando o botao estara desabilitado-->
+        <!--icone de envio-->
+        <mat-icon>send</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+</mat-card>
+
+

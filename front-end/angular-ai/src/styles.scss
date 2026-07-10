@@ -1,0 +1,24 @@
+@use '@angular/material' as mat;
+
+//CSS GERAL
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: linear-gradient(
+  135deg,
+  #08131f 0%,
+  #0d2544 45%,
+  #173b6d 75%,
+  #2b5da8 100%
+);
+
+}
+
+
+//cores da toolbar do angular material
+:root {
+  @include mat.toolbar-overrides((
+    container-background-color: #faad50,
+    container-text-color: #072a92,
+  ));
+}

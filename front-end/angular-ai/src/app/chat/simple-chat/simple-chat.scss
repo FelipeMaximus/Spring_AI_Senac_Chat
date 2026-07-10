@@ -1,0 +1,82 @@
+//CSS DO CHAT SIMPLES
+
+.chat-container{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  margin: 36px;
+  border: 1px solid rgb(97, 96, 96);
+  border-radius: 20px;
+}
+
+mat-toolbar {
+    border-radius: 20px 20px  1px 1px;
+}
+
+.titulo-chat{
+  font-weight: bold;
+}
+
+.chat-history{
+  flex: 1 1 auto;
+  overflow-y: auto; //barra de rolagem
+  padding: 10px;
+  background-color: #000000;
+}
+
+.message{
+  margin-bottom: 8px;
+}
+
+.message-buble{
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%; //quebra de linha
+  display: inline-block;
+  color: white;
+}
+
+.user{
+  background-color: #0563f9;
+  border-radius: 10px;
+  align-self: flex-end; //alinhamento para direita
+  margin-left: auto;
+  color: rgb(0, 0, 0);
+}
+
+.messages{
+  flex: 1;
+  margin-bottom: 16px;
+  overflow-y: auto; //barra de rolagem
+  padding-right: 8px;
+}
+
+//ANIMAÇÃO DO DIGITANDO
+.typing{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;//tira o wrap, sempre mostra os 3 pontinhos
+  animation: typing 1s steps(10) infinite alternate; //animação com 1 segundo de 10 passos infinito na direção alternada
+}
+
+//ANIMAÇÃO DO DIGITANDO
+@keyframes typing { //largura de 0 para 100%
+  from {
+    width: 0;
+   }
+  to {
+    width: 100%;
+  }
+}
+
+.chat-input{
+  flex: 0 0 auto;
+  padding: 10px;
+}
+
+.full-width{
+  width: 100%;
+  border: 1px solid rgb(220, 216, 216);
+  border-radius: 8px;
+  background-color: #b5c0ce;
+}
