@@ -64,6 +64,10 @@ A aplicação permite:
 
 # 🏗️ Arquitetura da solução
 
+
+```mermaid
+flowchart LR
+
 A[Usuário]
 
 B[Angular Frontend]
