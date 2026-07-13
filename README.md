@@ -103,9 +103,9 @@ Tecnologia	           Utilização
 Java 23	               Linguagem principal
 Spring Boot 3.5.14	   Framework backend
 Spring AI 1.1.7	       Integração com IA
-Maven	                Gerenciamento de dependências
+Maven	               Gerenciamento de dependências
 Eclipse IDE	           Desenvolvimento backend
-REST API	            Comunicação entre sistemas
+REST API	           Comunicação entre sistemas
 
 Inteligência Artificial
 Spring AI
