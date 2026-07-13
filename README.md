@@ -249,21 +249,16 @@ A aplicação utiliza variáveis para proteger informações sensíveis.
 
 Exemplo:
 GROQ_API_KEY=sua-chave
-
 DB_URL=jdbc:postgresql://localhost:5433/mydatabase
-
 DB_USERNAME=myuser
-
 DB_PASSWORD=secret
-
 MODEL_NAME=llama-3.3-70b-versatile
-
 
 Perfis Spring
 A aplicação utiliza:
 
-Desenvolvimento
 
+Desenvolvimento
 Arquivo:
 application-dev.properties
 Utilizado para ambiente local.
@@ -291,24 +286,26 @@ psql -U usuario -d mydatabase < backup.sql
 📮 Importar Postman
 
 Abrir Postman:
-
 Import
  ↓
 Upload Files
  ↓
 SenacAI.postman_collection.json
 
+
 🔗 Endpoints
 Criar novo chat
 POST /api/chat-memory
+
 Enviar mensagem
 POST /api/chat-memory/message
+
 Teste da API
 GET /api/chat-memory/teste
+
+
 ☁️ Deploy
-
 O projeto está preparado para deploy utilizando:
-
 Docker
 Render
 Docker Hub
@@ -329,41 +326,48 @@ Render
    |
 Aplicação Online
 
+
+
 📸 Screenshots
-
 Adicionar imagens da aplicação:
-
 /docs/images
 
 
 Sugestões:
-
 Tela inicial;
 Tela do chat;
 Respostas da IA;
 Arquitetura.
+
+
+
 🔮 Futuras melhorias
+
 Segurança
 Autenticação com JWT;
 Controle de usuários;
 Criptografia de dados.
+
 Inteligência Artificial
 Implementação de RAG;
 Integração com documentos;
 Upload de arquivos;
 Embeddings.
+
 Backend
 Testes automatizados;
 Docker Compose;
 CI/CD.
+
 Frontend
 Design responsivo;
 Dark mode;
 Streaming de respostas.
+
+
 📚 Conhecimentos aplicados
 
 Este projeto envolve:
-
 Desenvolvimento Full Stack;
 APIs REST;
 Inteligência Artificial Generativa;
@@ -372,14 +376,13 @@ Banco de Dados;
 DevOps;
 Containers;
 Arquitetura de Software.
+
+
 👨‍💻 Autor
-
 Desenvolvido por:
-
 Filypy Maycon
 
 Projeto desenvolvido para estudo, demonstração técnica e aplicação prática de Inteligência Artificial no desenvolvimento de software.
 
 📄 Licença
-
 Este projeto está disponível para fins educacionais e demonstração técnica.
