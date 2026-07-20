@@ -1,6 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 export interface ChatResponse {
   chatId: string;
@@ -15,7 +16,10 @@ export class ChatService {
 
   //PARA O PRIMEIRO TEST DE POT DO POSTAMAN
   //private readonly API = '/api/chat'; //API, e entre aspas esta o  nosso ENDPOINT
-  private readonly API = '/api/chat-memory/start'; //API, e entre aspas esta o  nosso ENDPOINT
+
+  //AQUI PARA OS ALUNOS VAI DESCOMENTAR O PRIMEIRO
+  //private readonly API = '/api/chat-memory/start'; //API, e entre aspas esta o  nosso ENDPOINT
+  private readonly API = environment.apiUrl + '/api/chat-memory/start';//CONEXÃO HOSPEDAGEM RENDER
 
   private http = inject(HttpClient); //INJETANDO O HTTPCLIENT PARA FAZER A REQUISIÇÃO HTTP
 
