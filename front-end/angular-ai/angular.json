@@ -36,7 +36,7 @@
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {
-              "allowedHosts": []
+              "allowedHosts": ["senac-ai-front.onrender.com"]
             },
             "ssr": {
               "entry": "src/server.ts"
