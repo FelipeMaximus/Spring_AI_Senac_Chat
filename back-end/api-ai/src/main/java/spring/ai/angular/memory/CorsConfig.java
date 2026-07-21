@@ -15,10 +15,12 @@ public class CorsConfig {
 
 	    @Bean
 	    public CorsFilter corsFilter() {
+	    	
+	    	System.out.println("######## CORS INICIADO ########");
 
 	        CorsConfiguration config = new CorsConfiguration();
 
-	        config.setAllowedOrigins(List.of(
+	        config.setAllowedOriginPatterns(List.of(
 	                "http://localhost:4200",
 	                "https://senac-ai-front.onrender.com"
 	        ));
