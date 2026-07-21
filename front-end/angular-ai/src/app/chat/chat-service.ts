@@ -19,7 +19,7 @@ export class ChatService {
 
   //AQUI PARA OS ALUNOS VAI DESCOMENTAR O PRIMEIRO
   //private readonly API = '/api/chat-memory/start'; //API, e entre aspas esta o  nosso ENDPOINT
-  private readonly API = environment.apiUrl;//CONEXÃO HOSPEDAGEM RENDER
+  private readonly API = environment.apiUrl + '/api/chat-memory/start';//CONEXÃO HOSPEDAGEM RENDER
 
   private http = inject(HttpClient); //INJETANDO O HTTPCLIENT PARA FAZER A REQUISIÇÃO HTTP
 
