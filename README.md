@@ -223,7 +223,8 @@ mvn clean package
 Executar aplicação:
 java -jar target/api-ai-0.0.1-SNAPSHOT.jar
 
-Backend disponível:
+Backend disponível local e em deploy:
+https://senac-ai-backend.onrender.com/api/chat-memory
 http://localhost:8080
 
 
