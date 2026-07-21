@@ -239,7 +239,8 @@ npm install
 Executar:
 ng serve
 
-Aplicação:
+Aplicação local e em deploy:
+https://senac-ai-front.onrender.com/simple-chat
 http://localhost:4200
 
 
